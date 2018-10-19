@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Class management system">
+  <meta name="keywords" content="Class,Organization,Management">
+  <meta name="author" content="Rafael Willian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title></title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC5TypmaJJTa5EToLzuTq6SGkPbB0LdqGo",
+      authDomain: "vanilla-noks.firebaseapp.com",
+      databaseURL: "https://vanilla-noks.firebaseio.com",
+      projectId: "vanilla-noks",
+      storageBucket: "vanilla-noks.appspot.com",
+      messagingSenderId: "855636335065"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <script>
+    firebase.database().ref('users/' + 'wisewill').set({
+      username: 'Rafael Willian',
+      email: 'Email'
+    });
+  </script>
+</body>
+
+</html>
