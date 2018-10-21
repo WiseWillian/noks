@@ -1,0 +1,68 @@
+#auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(60,179,113,0.9), rgba(60,179,113,0.9)), url(assets/background.png) fixed center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 15px 35px;
+    color: mediumseagreen;
+    background-color: white;
+    margin: 0px 5px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+}
+
+.tab:focus {
+    outline: 2px solid mediumseagreen;
+}
+
+.active {
+    color: white;
+    background-color: mediumseagreen;
+}
+
+.active:focus {
+    outline: 2px solid white;
+}
+
+form#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form#register-form {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
