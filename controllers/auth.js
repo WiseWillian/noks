@@ -1,5 +1,22 @@
 (function() {
 
+    /* Data setup */
+    var organizationsRef = firebase.database().ref('organizations');
+
+    organizationsRef.once('value', function(data) { 
+        organizations = data.val();
+        setUpOrganizations();
+    });
+
+    function setUpOrganizations() {
+        var selectBox = document.getElementById('register-organization');
+
+        for(var i = 1; i < organizations.length; i++){
+            var organization = organizations[i];
+            selectBox.options.add(new Option(organization, i, i === 1));
+        }
+    }
+
     /* Setting up event listeners */
 
     document.getElementById('login-tab').addEventListener('click', function() {
@@ -45,13 +62,7 @@
             registerUser(username, email, name, age);
     });
 
-    /* Setting up event handlers */
-
-    function isEmailValid(email) {
-        var atFlag = email.indexOf('@') > -1;
-        var dotFlag = email.indexOf('.' > -1);
-        return atFlag && dotFlag;
-    }
+    /* Database connection functions */
 
     function registerUser(username, email, name, age){
         firebase.database().ref('users/' + username).set({
