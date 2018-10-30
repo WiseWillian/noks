@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(0deg, rgba(60,179,113,0.9), rgba(60,179,113,0.9)), url(assets/background.png) fixed center;
+    background: linear-gradient(0deg, rgba(0,119,181,0.9), rgba(0,119,181,0.9)), url(assets/background.png) fixed center;
     min-height: 100vh;
     width: 100vw;
 }
@@ -23,36 +23,28 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60px;
     margin-top: -50px;
     margin-bottom: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
 }
 
 .tab {
     padding: 15px 35px;
-    color: mediumseagreen;
+    color: rgba(0,119,181,1);
     background-color: white;
     margin: 0px 5px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     border: 0px;
-}
-
-.tab:focus {
-    outline: 2px solid mediumseagreen;
+    border-bottom: 2px solid transparent;
 }
 
 .active {
-    color: white;
-    background-color: mediumseagreen;
-}
-
-.active:focus {
-    outline: 2px solid white;
+    border-bottom: 2px rgba(0,119,181,1);
 }
 
 form#login-form {
