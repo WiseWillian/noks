@@ -21,7 +21,23 @@
 
 .text-input:focus {
     outline: none;
-    border: 2px solid mediumseagreen;
+    border: 2px solid rgba(0,119,181,1);
+}
+
+.select-input {
+    font-size: 1em;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    background-color: white;
+}
+
+.select-input:focus {
+    outline: none;
+    border: 2px solid rgba(0,119,181,1);
 }
 
 .button {
@@ -31,17 +47,17 @@
     padding: 10px 20px;
     margin: 5px 0px;
     color: white;
-    background-color: mediumseagreen;
+    background-color: rgba(0,119,181,1);
 }
 
 .button:hover {
     cursor: pointer;
     color: white;
-    background-color: seagreen;
+    background-color: rgb(1, 99, 151);
 }
 
 .button:focus {
-    outline: 2px solid seagreen;
+    outline: 2px solid rgb(1, 99, 151);
 }
 
 .row {
